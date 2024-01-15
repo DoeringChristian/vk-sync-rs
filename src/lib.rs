@@ -311,7 +311,7 @@ pub fn get_memory_barrier(
 ) -> (
     vk::PipelineStageFlags,
     vk::PipelineStageFlags,
-    vk::MemoryBarrier,
+    vk::MemoryBarrier<'static>,
 ) {
     let mut src_stages = vk::PipelineStageFlags::empty();
     let mut dst_stages = vk::PipelineStageFlags::empty();
@@ -362,7 +362,7 @@ pub fn get_buffer_memory_barrier(
 ) -> (
     vk::PipelineStageFlags,
     vk::PipelineStageFlags,
-    vk::BufferMemoryBarrier,
+    vk::BufferMemoryBarrier<'static>,
 ) {
     let mut src_stages = vk::PipelineStageFlags::empty();
     let mut dst_stages = vk::PipelineStageFlags::empty();
@@ -420,7 +420,7 @@ pub fn get_image_memory_barrier(
 ) -> (
     vk::PipelineStageFlags,
     vk::PipelineStageFlags,
-    vk::ImageMemoryBarrier,
+    vk::ImageMemoryBarrier<'static>,
 ) {
     let mut src_stages = vk::PipelineStageFlags::empty();
     let mut dst_stages = vk::PipelineStageFlags::empty();
