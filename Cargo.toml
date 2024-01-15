@@ -21,4 +21,4 @@ edition = "2018"
 maintenance = { status = "actively-developed" }
 
 [dependencies]
-ash = { git = "https://github.com/ash-rs/ash.git", version = "0.37.0", rev = "92084df" }
+ash = { git = "https://github.com/DoeringChristian/ash.git", version = "0.37.0"}
